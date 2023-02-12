@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>โปรแกรมคำนวณดอกเบี้ยเงินกู้ | แบบคงที่</title>
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3>คำนวณดอกเบี้ยเงินกู้ (แบบคงที่)</h3>
+        <form>
+          <div class="form-interest">
+            เงินต้น :
+            <p class="form-input"><input type="number" id="principal-fixed" /></p>
+          </div>
+          <div class="form-Interest">
+            อัตราดอกเบี้ยต่อปี :
+            <p class="form-input"><input type="number" id="rate-fixed" /></p>
+          </div>
+          <div class="form-Interest">
+            จำนวนปีที่กู้ :
+            <p class="form-input"><input type="number" id="years-fixed" /></p>
+          </div>
+          <input
+            type="button"
+            value="คำนวณ"
+            onclick="calculateInterest()"
+          />
+        </form>
+      </div>
+
+      <div></div>
+    </div>
+
+    <p id="output-fixed"></p>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
